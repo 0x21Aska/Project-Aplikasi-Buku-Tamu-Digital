@@ -1,0 +1,333 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #212529;
+}
+
+p, a {
+    font-size: 1rem; /* Menggunakan rem untuk font-size */
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+
+.main-container {
+    width: 90%; /* Menggunakan persentase */
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Logo dan navbar menu */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 28px 0; */
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+} 
+
+/* .logo a {
+    color: #212529;
+} */
+
+.logo a img {
+    width: 150px;
+}
+
+nav ul li a {
+    color: #212529;
+}
+
+.logging {
+    color: #9D0208;
+}
+
+
+.the17-img {
+    position: absolute;
+    text-align: center;
+    top: 20%; /* Misalnya, langsung di bawah .nav */
+    left: 50%;
+    transform: translate(-50%, 0); /* Sesuaikan transform ini jika perlu */
+}
+
+.the17-img h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -170%);
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 24px;
+}
+
+.the17-img p {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -175%);
+    font-weight: 350;
+    color: #1e1e1e;
+    font-size: 12px;
+}
+
+
+
+
+
+/* Section About */
+#about {
+    margin-top: 0px; /* Atau nilai yang lebih kecil sesuai kebutuhan */
+    padding-top: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    padding-right: 30px;
+}
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    order: 1; /* Menempatkan .about-right di posisi pertama (kiri) */
+}
+
+.about-left {
+    padding-top: 64px;
+    order: 2; /* Menempatkan .about-left di posisi kedua (kanan) */
+}
+
+.sec-pre-title {
+    font-size: 24px;
+    padding-bottom: 12px;
+    font-weight: 500;
+}
+
+.about-right img {
+    width: 420px;
+    border-radius: 8px;
+    
+}
+
+.about-left {
+    padding-top: 64px;
+}
+
+.about-left p {
+    color: #7C8287;
+}
+
+.btn {
+    padding: 12px 32px 12px 32px;
+    background: #284B63;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 24px;
+    color: #f5f5f5;
+}
+
+/* Tiap section diset seperti di bawah */
+section {
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+/* Section When n where */
+#detail {
+
+    background-color: #FFF6D4;
+    padding: 180px;
+    margin-top: 64px;
+}
+
+.group-whenwer {
+    text-align: center;
+    /* margin-top: -100px; */
+    padding-right: 50px;
+    gap: 8px;
+}
+
+
+.group-whenwer h2 {
+    padding-bottom: 8px;
+}
+
+.wrappingDetail {
+    position: relative;
+    margin: -50px;
+    margin-top: -70px;
+}
+
+.group-ikons {
+    display: flex;
+    justify-content: space-around; /* Menyebarkan child elements secara merata */
+    padding-top: 32px;
+    padding-right: 50px;
+}
+
+.ikon-date {
+    text-align: center;
+    font-weight: 300;
+}
+
+.ikon-map {
+    text-align: center;
+    font-weight: 300;
+    width: 256px;
+}
+
+
+
+/* Section randomImg here */
+
+.imej {
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+/* Section GALLERY */
+#gallery {
+    margin-top: 64px;
+}
+
+.group-cards {
+    display: flex;
+    gap: 54px;
+    margin-top: 32px;
+}
+
+
+/* Section FOOTER */
+.footer-right-nav ul {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+
+}
+
+.group-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* ini untuk align top */
+}
+
+/* Media Queries untuk tablet */
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-right img, .about-left {
+        width: 100%; /* Mengisi penuh container */
+    }
+
+    #about {
+        grid-template-columns: 1fr; /* Mengubah grid menjadi satu kolom */
+    }
+
+    .group-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-right-nav ul {
+        grid-template-columns: 1fr; /* Mengubah layout menjadi satu kolom */
+    }
+}
+
+/* Media Queries untuk mobile */
+@media (max-width: 480px) {
+    p, a {
+        font-size: 0.875rem; /* Mengurangi ukuran font */
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        align-items: center;
+    }
+
+    .logo a img {
+        width: 120px; /* Menyesuaikan ukuran logo */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Mengurangi padding */
+    }
+
+    #detail {
+        padding: 50px 20px; /* Mengurangi padding */
+    }
+}
+
+/* Mengatur gambar dan elemen lainnya */
+img {
+    width: 1100px;
+    height: auto;
+}
+
+/* Typography responsif */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Mengurangi ukuran font dasar */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px; /* Lebih kecil lagi untuk mobile */
+    }
+}
+
+/* Mengatur elemen lain yang mungkin perlu responsif */
+.group-footer, .group-ikons, .group-whenwer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Mengatur padding dan margin secara umum */
+section, .main-container {
+    padding: 5% 3%;
+}
