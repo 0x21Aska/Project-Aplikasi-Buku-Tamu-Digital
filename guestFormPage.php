@@ -7,6 +7,7 @@ if (isset($_POST['buttonSubmit'])) {
     $telp = $_POST['telp'];
     $jml_tamu = $_POST['jml_tamu'];
     $doa_ucapan = $_POST['doa_ucapan'];
+    $kehadiran = $_POST['kehadiran']; // Input tersembunyi untuk kehadiran
 
     // Cek apakah data sudah ada
     $checkQuery = "SELECT * FROM table_guests WHERE nama='$nama' AND telp='$telp'";
@@ -14,7 +15,7 @@ if (isset($_POST['buttonSubmit'])) {
 
     if (mysqli_num_rows($result) == 0) {
         // Jika data belum ada, lakukan INSERT
-        $insertQuery = "INSERT INTO table_guests (nama, telp, jml_tamu, doa_ucapan) VALUES ('$nama', '$telp', '$jml_tamu', '$doa_ucapan')";
+        $insertQuery = "INSERT INTO table_guests (nama, telp, jml_tamu, doa_ucapan, kehadiran) VALUES ('$nama', '$telp', '$jml_tamu', '$doa_ucapan', '$kehadiran')";
         mysqli_query($conn, $insertQuery);
     } else {
         echo "Data sudah ada.";
@@ -83,6 +84,7 @@ if (isset($_POST['buttonSubmit'])) {
                 <form action="" method="post">
                     <div class="group-labeling">
                         <label for="nama">Nama</label><br>
+                        <p style="font-size: 13px;">(Jika membawa teman/pasangan harap ditulis seperti contoh. cth: rudi & istri)</p>
                         <input type="text" id="nama" name="nama" required><br>
                     </div>
                     <br>
@@ -93,7 +95,7 @@ if (isset($_POST['buttonSubmit'])) {
                     <br>
                     <div class="group-labeling">
                         <label for="jml_tamu">Jumlah Tamu</label><br>
-                        <input type="number" id="jml_tamu" name="jml_tamu"><br>
+                        <input type="number" id="jml_tamu" name="jml_tamu" min="0"><br>
                     </div>
                     <br>
                     <div class="group-labeling">
@@ -101,7 +103,7 @@ if (isset($_POST['buttonSubmit'])) {
                         <textarea id="doa_ucapan" name="doa_ucapan"></textarea><br><br>
                     </div>
                     <br>
-
+                    <input type="hidden" name="kehadiran" value="Hadir"> <!-- Input tersembunyi untuk kehadiran -->
                     <div class="iniButton">
                         <button type="submit" class="btn" name="buttonSubmit">Submit</button>
                     </div>
