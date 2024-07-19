@@ -170,7 +170,7 @@
     <!-- SECTION GMAPS -->
     <!-- <section id="gmaps">
 
-        <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=6%C2%B022'09.7%22S%20106%C2%B049'59.5%22E&key=AIzaSyDFXp3GHA9925eb5vvWVD8yWaofY_Z5KLA"></iframe>
+        <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=6%C2%B022'09.7%22S%20106%C2%B049'59.5%22E&key=[your-api-key]"></iframe>
 
     </section> -->
 
