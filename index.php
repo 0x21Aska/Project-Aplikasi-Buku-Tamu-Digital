@@ -35,13 +35,6 @@
                     </nav>
                 </div>
 
-                <!-- <div class="sidebar">
-                    <div class="hamMenu">
-                        <a href ="#">
-                            <img src="./assets/hamburger-menu.svg" alt="hamburger">
-                        </a>
-                    </div>
-                </div> -->
 
                 <div class="group-sidebar">
                     <input type="checkbox" id="toggle">
@@ -52,6 +45,7 @@
                         <a href="index.php">Home</a>
                         <a href="aboutPage.php">About</a>
                         <a href="guestFormPage.php">Guest Form</a>
+                        <a href="loginPage.php">Login</a>
                     </div>
                 </div>
 
@@ -168,11 +162,11 @@
 
 
     <!-- SECTION GMAPS -->
-    <!-- <section id="gmaps">
+    <section id="gmaps">
 
-        <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=6%C2%B022'09.7%22S%20106%C2%B049'59.5%22E&key=[your-api-key]"></iframe>
+        <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=6%C2%B022'09.7%22S%20106%C2%B049'59.5%22E&key=AIzaSyDFXp3GHA9925eb5vvWVD8yWaofY_Z5KLA"></iframe>
 
-    </section> -->
+    </section>
 
 
     <!-- SECTION FOOTER -->

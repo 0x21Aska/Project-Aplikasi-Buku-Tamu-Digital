@@ -1,3 +1,4 @@
+<!-- SECTION KIRIM -->
 <?php
 
 include 'connect.php';
@@ -35,6 +36,7 @@ if (isset($_POST['buttonSubmit'])) {
 </head>
 <body>
 
+    <!-- SECTION HEADER / NAVIGASI -->
     <header>
         <div class="main-container">
             <div class="group-nav">
@@ -62,6 +64,7 @@ if (isset($_POST['buttonSubmit'])) {
                         <a href="index.php">Home</a>
                         <a href="aboutPage.php">About</a>
                         <a href="guestFormPage.php">Guest Form</a>
+                        <a href="loginPage.php">Login</a>
                     </div>
                 </div>
 
@@ -71,6 +74,7 @@ if (isset($_POST['buttonSubmit'])) {
 
     </header>
 
+    <!-- SECTION GUEST FORM -->
     <div class="main-container">
         <div class="group-formulir">
             <div class="front-img2">

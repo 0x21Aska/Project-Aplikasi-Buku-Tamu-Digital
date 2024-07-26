@@ -18,6 +18,8 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="./css/styleDashboardPage.css">
 </head>
 <body>
+
+    <!-- SECTION SIDEBAR -->
     <div class="main-container">
         <div class="sidebar">
             <h1>MyBday</h1>
@@ -28,6 +30,8 @@ if (!isset($_SESSION['username'])) {
                 </ul>
             </nav>
         </div>
+
+        <!-- SECTION BODY -->
         <div class="main-content">
             <header>
                 <h2>Data Tamu</h2>

@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- SECTION HEADER / NAVIGASI -->
     <header>
         <div class="main-container">
             <div class="group-nav">
@@ -35,6 +36,7 @@
                         <a href="index.php">Home</a>
                         <a href="aboutPage.php">About</a>
                         <a href="guestFormPage.php">Guest Form</a>
+                        <a href="loginPage.php">Login</a>
                     </div>
                 </div>
 
@@ -44,6 +46,7 @@
 
     </header>
 
+    <!-- SECTION ABOUT -->
     <div class="main-container">
         <div class="group-about2">
             <div class="front-img2">

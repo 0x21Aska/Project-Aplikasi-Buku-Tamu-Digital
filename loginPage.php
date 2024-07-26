@@ -1,3 +1,4 @@
+<!-- SECTION LOGIN -->
 <?php 
 session_start();
 include 'connect.php';
@@ -38,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
 
+    <!-- SECTION HEADER / NAVIGASI -->
     <header>
         <div class="main-container">
             <div class="group-nav">
@@ -56,12 +58,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </ul>
                 </nav>
 
+
+                <div class="group-sidebar">
+                    <input type="checkbox" id="toggle">
+                    <label class="hamburger-menu" for="toggle">&#9776;</label>
+
+                    <div class="sidebar">
+                        <!-- <label class="closebtn" for="toggle"></label> -->
+                        <a href="index.php">Home</a>
+                        <a href="aboutPage.php">About</a>
+                        <a href="guestFormPage.php">Guest Form</a>
+                        <a href="loginPage.php">Login</a>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
     </header>
 
+    <!-- SECTION FORM LOGIN -->
     <section id="login">
         <div class="group-login">
             <div class="login-header">

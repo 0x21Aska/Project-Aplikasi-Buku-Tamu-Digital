@@ -103,10 +103,11 @@ body {
         position: absolute;
         z-index: 1;
         background-color: #FFF6D4;
-        overflow-x: hidden;
+        overflow: hidden;
         padding-top: 60px;
         display: none;
         border-radius: 5px;
+        
     }
 
     #toggle:checked ~ .sidebar {
